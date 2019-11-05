@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="online_test" pkg="calibration_rgbdcam_mocap" type="online_test_node" cwd="node">
+    <param name="rgb_dir" value="/home/hoang/Datasets/IROS-2019-dataset/calibration/1_rgb.png"/>
+    <param name="depth_dir" value="/home/hoang/Datasets/IROS-2019-dataset/calibration/1_depth.png"/>
+    <param name="saved_transform_dir" value="/home/hoang/Datasets/IROS-2019-dataset/calibration/transformation.txt"/>
+  </node>
+</launch>

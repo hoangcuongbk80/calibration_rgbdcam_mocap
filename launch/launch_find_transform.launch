@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="find_transform" pkg="calibration_rgbdcam_mocap" type="find_transform_node" cwd="node">
+    <param name="run_getChessboardPose_inCamCS" value="true"/>
+    <param name="rgb_dir" value="/home/hoang/datasets/datasets_collected/bagfiles/Mocap_Xtion_calibration_20190201/1_rgb.png"/>
+    <param name="depth_dir" value="/home/hoang/datasets/datasets_collected/bagfiles/Mocap_Xtion_calibration_20190201/1_depth.png"/>
+    <param name="saved_transform_dir" value="/home/hoang/datasets/datasets_collected/bagfiles/Mocap_Xtion_calibration_20190201/results/transformation.txt"/>
+    <param name="saved_draw_dir" value="/home/hoang/Datasets/IROS-2019-dataset/calibration/1_draw_chessboard.png"/>
+    <param name="cx" value="315.5"/>
+    <param name="cy" value="239.5"/>
+    <param name="fx" value="520.0"/>
+    <param name="fy" value="580.0"/>
+
+    <param name="run_getT_camToMarkers" value="true"/>
+    <param name="results_dir" value="/home/hoang/Datasets/IROS-2019-dataset/calibration/results/"/>
+
+  </node>
+</launch>
