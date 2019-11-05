@@ -240,10 +240,10 @@ int main(int argc, char** argv)
   }
 
   pcl::visualization::PCLVisualizer::Ptr viewer (new pcl::visualization::PCLVisualizer ("3D Viewer"));
-  viewer->setBackgroundColor (0, 0, 0);
+  viewer->setBackgroundColor (0.7, 0.7, 0.72);
   pcl::visualization::PointCloudColorHandlerRGBField<pcl::PointXYZRGB> rgb(cloud_);
   viewer->addPointCloud<pcl::PointXYZRGB> (cloud_, rgb, "sample cloud");
-  viewer->setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 3, "sample cloud");
+  viewer->setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 2, "sample cloud");
   viewer->addCoordinateSystem (500.0);
   viewer->initCameraParameters ();
   while (!viewer->wasStopped ())
